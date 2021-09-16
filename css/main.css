@@ -206,30 +206,29 @@
     font-size: 25px;
 }
 
-header {
+.headerContent {
     background-image: url(../img/shape-a.png);
     background-color: #faf7fe;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
 }
 
 
-.header-heading {
+.headerContent-heading {
     padding: 100px 0 50px;
 }
 
 
-.header-heading .header-title {
+.headerContent-heading .headerContent-title {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
 }
 
-.header-heading .header-title h1 {
+.headerContent-heading .headerContent-title h1 {
     font-size: 72px;
     font-weight: 900;
     color: #50658e;
@@ -237,7 +236,7 @@ header {
     padding: 10px;
 }
 
-.header-heading .header-title span h3 {
+.headerContent-heading .headerContent-title span h3 {
     font-size: 23px;
     font-weight: 600;
     color: #FF5363;
@@ -245,7 +244,7 @@ header {
     padding: 10px;
 }
 
-.header-heading .header-title span h2 {
+.headerContent-heading .headerContent-title span h2 {
     font-size: 30px;
     font-weight: 700;
     color: #50658e;
@@ -253,12 +252,12 @@ header {
     padding: 10px;
 }
 
-.header-heading .header-paragraph {
+.headerContent-heading .headerContent-paragraph {
     padding: 20px 0;
     text-align: center;
 }
 
-.header-heading .header-btns {
+.headerContent-heading .headerContent-btns {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -276,7 +275,7 @@ header {
     margin-left: 10px;
 }
 
-.header-heading .header-btns .btn-readmore {
+.headerContent-heading .headerContent-btns .btn-readmore {
     background-color: #2a81ea;
     color: white;
     text-transform: uppercase;
@@ -286,24 +285,18 @@ header {
 
 }
 
-.header-heading .header-btns .btn-readmore i {
+.headerContent-heading .headerContent-btns .btn-readmore i {
     padding: 5px 10px;
 
 }
 
-.header-heading .header-update h6 {
+.headerContent-heading .headerContent-update h6 {
     font-size: 12px;
     color: #465675;
 
 }
 
-@media screen and (max-width: 991px) {
-    .header-heading .header-update h6 {
-        text-align: center;
-    }
-}
-
-.header-numbers {
+.headerContent-numbers {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -311,7 +304,7 @@ header {
     align-items: center;
 }
 
-.header-numbers .header-number {
+.headerContent-numbers .headerContent-number {
     font-size: 12px;
     color: #50658e;
     letter-spacing: 2px;
@@ -319,14 +312,14 @@ header {
     text-transform: uppercase;
 }
 
-.header-numbers .header-number .numbers {
+.headerContent-numbers .headerContent-number .numbers {
     font-size: 20px;
     color: #465675;
     letter-spacing: 2px;
     font-weight: bold;
 }
 
-.header-img img {
+.headerContent-img img {
     height: 100%;
     width: 100%;
     padding: 50px 0 50px;
@@ -336,13 +329,7 @@ header {
 
 /*header end*/
 .about .about-heading {
-    padding: 80px 20px;
-}
-
-@media screen and (max-width: 991px) {
-    .about .about-heading .about-text {
-        text-align: center;
-    }
+    padding: 50px 20px;
 }
 
 .about .about-heading .about-text .hclass-1 {
@@ -528,19 +515,6 @@ header {
     width: 40%;
     height: 40%;
     border-radius: 50%;
-}
-
-@media screen and (max-width: 991px) {
-    .symptoms .symptoms-layout .symptoms-content {
-        position: relative;
-        margin-bottom: 50px;
-    }
-
-    .symptoms .symptoms-layout .symptoms-content .symptoms-img {
-        position: absolute;
-        top: 0%;
-        right: -10%;
-    }
 }
 
 .symptoms .symptoms-layout .symptoms-content .symptoms-text {
@@ -779,24 +753,6 @@ header {
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 991px) {
-    .treatment .container {
-        text-align: center;
-    }
-
-    .treatment .treatment-heading .treatment-text .hclass-1 {
-        text-align: center;
-    }
-
-    .treatment .treatment-heading .about-paragraph1 {
-        text-align: center;
-    }
-
-    .treatment .treatment-menu .treatment-submenu ul {
-        text-align: left;
-    }
-}
-
 /*end treatment*/
 .protection {
     background-color: #f7f9fe;
@@ -879,28 +835,6 @@ header {
     font-size: 14px;
     margin-right: 20px;
     font-weight: bold;
-}
-
-@media screen and (max-width: 991px) {
-    .protection-imgs1 {
-        order: 2;
-    }
-
-    .protection-imgs2 {
-        order: 1;
-    }
-
-    .protection-imgs3 {
-        order: 3;
-    }
-
-    .protection-imgs .count .icon {
-        left: 62px;
-    }
-
-    .protection-imgs .protection-imgs1 .count .icon {
-        left: 246px;
-    }
 }
 
 /*end protection*/
@@ -1213,3 +1147,96 @@ footer .footer-down {
 }
 
 /**icons**/
+
+
+@media screen and (max-width: 990px) {
+
+    .headerContent-heading .headerContent-numbers,
+    .headerContent-heading .headerContent-btns,
+    .headerContent-heading .headerContent-title {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .headerContent-heading .headerContent-btns .btn-readmore {
+        margin: 20px 0;
+    }
+
+    .protection-imgs1 {
+        order: 2;
+    }
+
+    .protection-imgs2 {
+        order: 1;
+    }
+
+    .protection-imgs3 {
+        order: 3;
+    }
+
+    .protection-imgs .count .icon {
+        left: 62px;
+    }
+
+    .protection-imgs .protection-imgs1 .count .icon {
+        left: 129px;
+    }
+
+    .symptoms .symptoms-layout .symptoms-content {
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .symptoms .symptoms-layout .symptoms-content .symptoms-img {
+        position: absolute;
+        top: 0%;
+        right: -10%;
+    }
+
+    .about .about-heading .about-text,
+    .treatment .container,
+    .treatment .treatment-heading .about-paragraph1,
+    .treatment .treatment-heading .treatment-text .hclass-1,
+    .headerContent-heading .headerContent-update h6,
+    .headerContent-numbers .headerContent-number .numbers {
+        text-align: center;
+    }
+
+    .treatment .treatment-menu .treatment-submenu ul {
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .headerContent-heading .headerContent-title h1 {
+        font-size: 62px;
+    }
+
+    .headerContent-heading .headerContent-update h6 {
+        text-align: center;
+    }
+
+    .headerContent-numbers .headerContent-number .numbers {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .home .navbar .top-icon {
+        right: 10.5%;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .navbar-toggler {
+        margin-right: 50px;
+    }
+
+    .home .navbar .close-icon {
+        right: 14%;
+    }
+}
