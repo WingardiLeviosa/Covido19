@@ -1148,6 +1148,17 @@ footer .footer-down {
 
 /**icons**/
 
+@media screen and (max-width: 1024px) {
+
+    .protection-imgs .protection-imgs3 .count .icon {
+        color: #3dca93;
+        right: 185px;
+    }
+
+    .protection-imgs .protection-imgs1 .count .icon {
+        left: 195px;
+    }
+}
 
 @media screen and (max-width: 990px) {
 
@@ -1220,17 +1231,6 @@ footer .footer-down {
     }
 }
 
-@media screen and (max-width: 1024px) {
-
-    .protection-imgs .protection-imgs3 .count .icon {
-        color: #3dca93;
-        right: 185px;
-    }
-
-    .protection-imgs .protection-imgs1 .count .icon {
-        left: 195px;
-    }
-}
 
 @media screen and (max-width: 600px) {
 
@@ -1287,6 +1287,13 @@ footer .footer-down {
     }
 }
 
+@media screen and (max-width: 415px) {
+
+    .protection-imgs .protection-imgs3 .count .icon {
+        right: 100px;
+    }
+}
+
 @media screen and (max-width: 400px) {
 
     .protection-imgs .protection-imgs3 .count .icon {
@@ -1308,38 +1315,30 @@ footer .footer-down {
     }
 }
 
-@media screen and (max-width: 415px) {
-
-    .protection-imgs .protection-imgs3 .count .icon {
-        right: 100px;
-    }
-}
-
-
 @media screen and (max-width: 376px) {
 
     .protection-imgs .protection-imgs3,
     .protection-imgs .protection-imgs1 {
         padding-right: 4px;
-        padding-left: 12px;
+        padding-left: 15px;
     }
 
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 360px) {
 
     .protection-imgs .protection-imgs3,
     .protection-imgs .protection-imgs1 {
         padding-right: 0;
-        padding-left: 22px;
+        padding-left: 8px;
     }
 
     .protection-imgs .protection-imgs1 .count .icon {
-        left: 82px;
+        left: 103px;
     }
 
     .protection-imgs .protection-imgs3 .count .icon {
-        left: 31px;
+        left: 45px;
     }
 
 }
