@@ -1239,4 +1239,8 @@ footer .footer-down {
     .home .navbar .close-icon {
         right: 14%;
     }
+    footer .footer-up {
+        padding: 10px 25px;
+    }
+    
 }
